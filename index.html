@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--ICS2O-Unit2-04-HTML-User_Input_Math-->
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="My first webpage, with CSS">
+    <meta name="keywords" content="mths, ics2o">
+    <meta name="author" content="Ryan-Shaw-2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="stylesheet" href="./css/style.css">
+    <title> Area and Perimeter, with user input </title>
+  </head>
+	<body>
+    <script src="./js/script.js"></script>
+    <h1>Area and Perimeter of a rectangle, with JS</h1>
+    <h2>Formulas</h2>
+    <h3>A = L x W</h3>
+    <h3>P = 2 x (L + W)</h3>
+    <p>Please enter intergers for dimensions</p>
+      <p>
+        <form action="javascript:calculateClicked()">
+          <label for="length">Length:</label>
+          <input type="number" id="length" placeholder="e.g. 3">
+          <label for="unit">cm</label><br><br>
+          <label for="width">Width:</label>
+          <input type="number" id="width" placeholder="e.g. 5">
+          <label for="unit">cm</label><br><br>
+          <input type="submit" value="Calculate">
+        </form>
+      </p>
+      <div id="user-input">
+        <div id="area"></div>
+        <div id="perimeter"></div>
+      </div>
+	</body>
+</html>
